@@ -1,4 +1,4 @@
-# Simple-OpenCV-Traffic-Light-Detection
+# Simple OpenCV Traffic Light Detection
 Simple OpenCV traffic light detection written in C++.
 
 # Getting Started
