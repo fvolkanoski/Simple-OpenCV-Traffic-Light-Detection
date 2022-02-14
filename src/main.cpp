@@ -27,8 +27,10 @@ int main()
     std::vector<cv::Vec3f> r_circles, 
 						   g_circles;
 
+	medianBlur(maskg, maskg, 5);
+
     cv::HoughCircles(mask_r, r_circles, cv::HOUGH_GRADIENT, 1, 80, 90, 12, 6, 30);
-    cv::HoughCircles(mask_g, g_circles, cv::HOUGH_GRADIENT, 1, 60, 50, 10, 0, 30);
+    cv::HoughCircles(mask_g, g_circles, cv::HOUGH_GRADIENT, 1, 60, 100, 15, 0, 30);
 
     for( size_t i = 0; i < r_circles.size(); i++ )
     {
